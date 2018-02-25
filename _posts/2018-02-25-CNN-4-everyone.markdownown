@@ -2,7 +2,7 @@
 layout: post
 title: Convolutional Neural Networks for everyone
 date: 2018-02-25 00:00:00 +0100
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Have you ever wondered how people can classify images with accuracies in the high 90's? Wonder no more - CNN to the rescue. 
 img: how-to-start.jpg # Add image post (optional)
 tags: [Programming, Learn] # add tag
 ---
