@@ -1,0 +1,17 @@
+---
+layout: post
+title: Convolutional Neural Networks for everyone
+date: 2018-02-25 00:00:00 +0100
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: how-to-start.jpg # Add image post (optional)
+tags: [Programming, Learn] # add tag
+---
+During my recent endeavours with fast.ai I discovered how to understand Convolutional Neural Networks (CNN). 
+
+>It consists only of applying a matrix (filter) to a vector and calculating the dot-product.
+
+more to follow
+
+TEST TEST TEST 
+
+#test2
