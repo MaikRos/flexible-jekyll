@@ -472,7 +472,7 @@ template {
 
 /* Error */
 .highlight .k {
-  color: #069;
+  color: #db5e9b;
 }
 
 /* Keyword */
@@ -561,7 +561,7 @@ template {
 
 /* Keyword.Declaration */
 .highlight .kn {
-  color: #d33682;
+  color: #db5e9b;
 }
 
 /* Keyword.Namespace */
