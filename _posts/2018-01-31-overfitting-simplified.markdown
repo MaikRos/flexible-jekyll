@@ -1,6 +1,13 @@
-# Blog - 01/30/2018 
+---
+layout: post
+title: Overfitting - simplified
+date: 2018-01-31 00:00:00 +0100
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: software.jpg # Add image post (optional)
+tags: [Data Science, simplified explanation] # add tag
+---
 
-### Overfitting - simplified
+
 Imagine you are in desperate need of a new dress shirt. You visit your favourite tailors and they start measuring for the perfect fit.
 Every inch of your upper body is measured and since they are incredibly fast with their production you have your new shirt an hour later.
 It fits perfectly, like a glove. The gala on saturday is prepared. 
