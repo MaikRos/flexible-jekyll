@@ -10,7 +10,7 @@ tags: [Programming, Learn] # add tag
 
 ### What is the difference between Machine Learning (ML) and Artificial Intelligence (AI)?
 
-During my recent endeavours with fast.ai I discovered how to understand Convolutional Neural Networks (CNN). 
+During my recent endeavours with [fastai](http://fast.ai/ "Fast.ai") I discovered how to understand Convolutional Neural Networks (CNN). 
 
 >It consists only of applying a matrix (filter) to a vector and calculating the dot-product.
 
