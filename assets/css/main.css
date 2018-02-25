@@ -456,6 +456,10 @@ template {
   background-color: #ffc;
 }
 
+.highlight .n {
+  color: #586e75;
+}
+
 .highlight .c {
   color: #999;
 }
@@ -632,7 +636,7 @@ template {
 
 /* Name.Label */
 .highlight .nn {
-  color: #0cf;
+  color: #586e75;
 }
 
 /* Name.Namespace */
