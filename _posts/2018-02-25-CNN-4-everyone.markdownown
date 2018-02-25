@@ -16,7 +16,7 @@ During my recent endeavours with fast.ai I discovered how to understand Convolut
 
 more to follow
 
-<import fastai
+<import fastai>
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
