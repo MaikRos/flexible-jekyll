@@ -457,7 +457,7 @@ template {
 }
 
 .highlight .n {
-  color: #586e75;
+  color: #bcc5c7;
 }
 
 .highlight .c {
@@ -561,7 +561,7 @@ template {
 
 /* Keyword.Declaration */
 .highlight .kn {
-  color: #ff99ff;
+  color: #d33682;
 }
 
 /* Keyword.Namespace */
@@ -636,7 +636,7 @@ template {
 
 /* Name.Label */
 .highlight .nn {
-  color: #586e75;
+  color: #bcc5c7;
 }
 
 /* Name.Namespace */
