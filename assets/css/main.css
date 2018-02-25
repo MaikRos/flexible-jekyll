@@ -586,7 +586,7 @@ template {
 
 /* Literal.Number */
 .highlight .s {
-  color: #d44950;
+  color: #82e062;
 }
 
 /* Literal.String */
@@ -626,7 +626,7 @@ template {
 
 /* Name.Exception */
 .highlight .nf {
-  color: #c0f;
+  color: #1793d1;
 }
 
 /* Name.Function */
