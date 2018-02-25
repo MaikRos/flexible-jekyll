@@ -6,6 +6,10 @@ description: You’ll find this post in your `_posts` directory. Go ahead and ed
 img: how-to-start.jpg # Add image post (optional)
 tags: [Programming, Learn] # add tag
 ---
+>Machine learning is the hardest thing you have ever done. Until you meet AI.
+
+### What is the difference between Machine Learning (ML) and Artificial Intelligence (AI)?
+
 During my recent endeavours with fast.ai I discovered how to understand Convolutional Neural Networks (CNN). 
 
 >It consists only of applying a matrix (filter) to a vector and calculating the dot-product.
@@ -14,4 +18,4 @@ more to follow
 
 TEST TEST TEST 
 
-#test2
+# test2
