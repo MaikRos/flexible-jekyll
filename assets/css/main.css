@@ -444,7 +444,7 @@ template {
 }
 
 .highlighter-rouge {
-  color: #CC04FF;
+  color: #bfbfbf;
   font-weight: 400;
   border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
@@ -557,7 +557,7 @@ template {
 
 /* Keyword.Declaration */
 .highlight .kn {
-  color: #069;
+  color: #ff99ff;
 }
 
 /* Keyword.Namespace */
