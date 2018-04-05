@@ -7,6 +7,7 @@ img: software.jpg # Add image post (optional)
 tags: [Data Science, simplified explanation] # add tag
 ---
 
+- Photo by Glenn Carstens-Peters on Unsplash
 
 Imagine you are in desperate need of a new dress shirt. You visit your favourite tailors and they start measuring for the perfect fit.
 Every inch of your upper body is measured and since they are incredibly fast with their production you have your new shirt an hour later.
