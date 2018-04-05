@@ -6,14 +6,14 @@ description: Yahoo changed their finance API in 2017 and ever since it has been 
 img: how-to-start.jpg # Add image post (optional)
 tags: [Programming, Learn, finance, yahoo, learning] # add tag
 ---
->Python can interact with websites using the [requests library](http://docs.python-requests.org/en/master/) 
+
 
 When you want to start using financial data for a side project or to get started with Data Science it can quickly become tedious to scrape all the relevant information from the web. <br>
 **No more!** Here are three small functions which let you interact with the yahoo finance website in order to download historical stock data. <br>
 
 For these functions to work, we need to import some modules first - 
 ```python
-import requests                  # handles the http interactions
+import requests                  # [handles the http interactions](http://docs.python-requests.org/en/master/) 
 from bs4 import BeautifulSoup    # beautiful soup handles the html to text conversion and more
 import re                        # regular expressions are necessary for finding the crumb (more on crumbs later)
 from datetime import datetime
@@ -60,7 +60,9 @@ def _get_crumbs_and_cookies(stock):
         crumb = re.findall('"CrumbStore":{"crumb":"(.+?)"}', str(soup))
 
         return (website.cookies, header, crumb[0])
-        
+```
+
+```python        
 def convert_to_unix(date):
     """
     converts date to unix timestamp
@@ -70,7 +72,9 @@ def convert_to_unix(date):
     returns integer unix timestamp
     """
     return int(datetime.strptime(date, '%d/%m/%Y').strftime("%s"))
+```
 
+```python
 def load_csv_data(stock, interval='1d', day_begin='1520118000', day_end='1522792800'):
     """
     queries yahoo finance api to receive historical data in csv file format
