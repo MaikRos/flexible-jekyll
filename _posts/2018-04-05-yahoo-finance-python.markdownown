@@ -116,5 +116,5 @@ def load_csv_data(stock, interval='1d', day_begin='01-03-2018', day_end='28-03-2
     
 ```
 
-## Thats it, all the magic done and you can now work with the stock data and visualize it beautifuly!
+## Thats it, all the magic done and you can now work with the stock data and visualize it beautifully!
 If you like and/or use this code, drop me a tweet or dm! <br>
