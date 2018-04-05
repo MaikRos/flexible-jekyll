@@ -2,7 +2,7 @@
 layout: post
 title: Overfitting - simplified
 date: 2018-01-31 00:00:00 +0100
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Overfitting explained in a non-technical manner. # Add post description (optional)
 img: software.jpg # Add image post (optional)
 tags: [Data Science, simplified explanation] # add tag
 ---
