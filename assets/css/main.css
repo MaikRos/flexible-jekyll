@@ -477,7 +477,7 @@ template {
 
 /* Keyword */
 .highlight .o {
-  color: #555;
+  color: #F0F0F0;
 }
 
 /* Operator */
@@ -596,7 +596,7 @@ template {
 
 /* Name.Attribute */
 .highlight .nb {
-  color: #366;
+  color: #F0F0F0;
 }
 
 /* Name.Builtin */
