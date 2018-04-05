@@ -3,10 +3,10 @@ layout: post
 title: Interact with the yahoo finance API using python's requests library
 date: 2018-04-05 00:00:00 +0100
 description: Yahoo changed their finance API in 2017 and ever since it has been hard to find a reliable script to interact with the page, here we go!
-img: how-to-start.jpg  - Photo by Tirza van Dijk on [Unsplash](https://unsplash.com/@tirzavandijk)
+img: how-to-start.jpg
 tags: [Programming, Learn, finance, yahoo, learning] # add tag
 ---
-
+- Photo by Tirza van Dijk on [Unsplash](https://unsplash.com/@tirzavandijk) -
 
 When you want to start using financial data for a side project or to get started with Data Science it can quickly become tedious to scrape all the relevant information from the web. <br>
 **No more!** Here are three small functions which let you interact with the yahoo finance website in order to download historical stock data. <br>
