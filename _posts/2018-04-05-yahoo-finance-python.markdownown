@@ -16,14 +16,14 @@ For these functions to work, we need to import some modules first -
 import requests                  # [handles the http interactions](http://docs.python-requests.org/en/master/) 
 from bs4 import BeautifulSoup    # beautiful soup handles the html to text conversion and more
 import re                        # regular expressions are necessary for finding the crumb (more on crumbs later)
-from datetime import datetime
+from datetime import datetime    # needed for normal date to unix timestamp conversion
 ```
 
 Now, lets talk a little about cookies &#127850; and crumbs &#127860;&#127850;  <br>
 
->**Cookie Monster: <br>
->**Two wrongs not make right. <br>
->But two &#127850; . . . make everything right. <br>
+><b>Cookie Monster:</b> <br>
+>Two wrongs not make right. <br>
+>But two &#127850; . . . make everything right.</b> <br>
 >[Twitter](https://twitter.com/MeCookieMonster/status/981253568538775552)
 
 Cookies are small text snippets websites usually save on your computer, they can contain for example identifiers such as session IDs. <br>
@@ -36,6 +36,8 @@ contains a single cookie element (**B**), which we will send with our request. <
 Additionally, they use something called a **crumb, which is another identifier, but this one is send in the url**, when requesting the historical csv file!<br>
 
 Lets dive into coding!: <br>
+The first function calls the website of a selected stock and collects the cookies and crumb. <br>
+We reuse the headers in the subsequent function to mimic the same browser. <br>
 ```python
 def _get_crumbs_and_cookies(stock):
     """
@@ -62,6 +64,8 @@ def _get_crumbs_and_cookies(stock):
         return (website.cookies, header, crumb[0])
 ```
 
+The second function just converts the provided start/stop dates into unix timestamps, because yahoo finance uses these in the request url. <br>
+
 ```python        
 def convert_to_unix(date):
     """
@@ -74,8 +78,10 @@ def convert_to_unix(date):
     return int(datetime.strptime(date, '%d/%m/%Y').strftime("%s"))
 ```
 
+While the last function does the actual requesting of the historical stock data. <br>
+This function returns a list of the individual daily values, containing the header (row 0) and subsequently one line per day. <br>
 ```python
-def load_csv_data(stock, interval='1d', day_begin='1520118000', day_end='1522792800'):
+def load_csv_data(stock, interval='1d', day_begin='01/03/2018', day_end='28/03/2018'):
     """
     queries yahoo finance api to receive historical data in csv file format
     
@@ -105,3 +111,7 @@ def load_csv_data(stock, interval='1d', day_begin='1520118000', day_end='1522792
         return website.text.split('\n')[:-1]
     
 ```
+
+## Thats it, all the magic done and you can now work with the stock data and visualize it beautifuly!
+If you like and/or use this code, drop me a tweet or dm! <br>
+```@__maikros__```
