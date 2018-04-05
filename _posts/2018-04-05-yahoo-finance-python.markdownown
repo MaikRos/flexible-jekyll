@@ -16,7 +16,8 @@ For these functions to work, we need to import some modules first -
 import requests                  # [handles the http interactions](http://docs.python-requests.org/en/master/) 
 from bs4 import BeautifulSoup    # beautiful soup handles the html to text conversion and more
 import re                        # regular expressions are necessary for finding the crumb (more on crumbs later)
-from datetime import datetime    # needed for normal date to unix timestamp conversion
+from datetime import datetime    # string to datetime object conversion
+from time import mktime          # mktime transforms datetime objects to unix timestamps
 ```
 
 Now, lets talk a little about cookies &#127850; and crumbs &#127860;&#127850;  <br>
@@ -71,17 +72,20 @@ def convert_to_unix(date):
     """
     converts date to unix timestamp
     
-    parameters: date - in format (dd/mm/yyyy)
+    parameters: date - in format (dd-mm-yyyy)
     
     returns integer unix timestamp
     """
-    return int(datetime.strptime(date, '%d/%m/%Y').strftime("%s"))
+    datum = datetime.strptime(date, '%d-%m-%Y')
+    
+    return int(mktime(datum.timetuple()))
+
 ```
 
 While the last function does the actual requesting of the historical stock data. <br>
 This function returns a list of the individual daily values, containing the header (row 0) and subsequently one line per day. <br>
 ```python
-def load_csv_data(stock, interval='1d', day_begin='01/03/2018', day_end='28/03/2018'):
+def load_csv_data(stock, interval='1d', day_begin='01-03-2018', day_end='28-03-2018'):
     """
     queries yahoo finance api to receive historical data in csv file format
     
@@ -90,9 +94,9 @@ def load_csv_data(stock, interval='1d', day_begin='01/03/2018', day_end='28/03/2
         
         interval - 1d, 1wk, 1mo - daily, weekly monthly data
         
-        day_begin - starting date for the historical data (format: dd/mm/yyyy)
+        day_begin - starting date for the historical data (format: dd-mm-yyyy)
         
-        day_end - final date of the data (format: dd/mm/yyyy)
+        day_end - final date of the data (format: dd-mm-yyyy)
     
     returns a list of comma seperated value lines
     """
