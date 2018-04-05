@@ -21,7 +21,7 @@ from datetime import datetime    # needed for normal date to unix timestamp conv
 
 Now, lets talk a little about cookies &#127850; and crumbs &#127860;&#127850;  <br>
 
-><b>Cookie Monster:</b> <br>
+><b>Cookie Monster: <br>
 >Two wrongs not make right. <br>
 >But two &#127850; . . . make everything right.</b> <br>
 >[Twitter](https://twitter.com/MeCookieMonster/status/981253568538775552)
@@ -35,7 +35,7 @@ in my case, when connecting to the website, the cookiejar <br>
 contains a single cookie element (**B**), which we will send with our request. <br> 
 Additionally, they use something called a **crumb, which is another identifier, but this one is send in the url**, when requesting the historical csv file!<br>
 
-Lets dive into coding!: <br>
+## Coding
 The first function calls the website of a selected stock and collects the cookies and crumb. <br>
 We reuse the headers in the subsequent function to mimic the same browser. <br>
 ```python
@@ -114,4 +114,3 @@ def load_csv_data(stock, interval='1d', day_begin='01/03/2018', day_end='28/03/2
 
 ## Thats it, all the magic done and you can now work with the stock data and visualize it beautifuly!
 If you like and/or use this code, drop me a tweet or dm! <br>
-```@__maikros__```
