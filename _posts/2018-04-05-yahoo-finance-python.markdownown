@@ -3,7 +3,7 @@ layout: post
 title: Interact with the yahoo finance API using python's requests library
 date: 2018-04-05 00:00:00 +0100
 description: Yahoo changed their finance API in 2017 and ever since it has been hard to find a reliable script to interact with the page, here we go!
-img: how-to-start.jpg # Add image post (optional)
+img: how-to-start.jpg  - Photo by Tirza van Dijk on [Unsplash](https://unsplash.com/@tirzavandijk)
 tags: [Programming, Learn, finance, yahoo, learning] # add tag
 ---
 
