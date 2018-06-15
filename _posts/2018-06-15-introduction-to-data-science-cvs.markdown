@@ -3,11 +3,11 @@ layout: post
 title: Introduction to data science CVs
 date: 2018-06-15 00:00:00 +0100
 description: What I did to tune my CV during the application phase # Add post description (optional)
-img: software.jpg # Add image post (optional)
+img: one_way.jpg # Add image post (optional)
 tags: [Data Science, CV, curriculum vitae, job] # add tag
 ---
 
-- Photo by Glenn Carstens-Peters on Unsplash
+- Photo by Nick Tiemeyer on Unsplash
 
 For those of you who are looking for new opportunities in data science - have you ever wondered which factors influence whether you are invited
 to an interview after sending your application? 
