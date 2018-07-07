@@ -19,17 +19,15 @@ First things first, this guide is my personal experience and you might have a di
 Now that we have this out of the way, lets go:<br>
 
 ### parts list
-| part | name |
-| --- | --- |
-| GPU | Zotac 1080 TI AMP Extreme |
-| CPU | Intel i7 6850k |
-| RAM | Gskill F4 3200 16 GB |
-| motherboard | AsRock X99 Extreme4 |
-| PSU | EVGA 1000 W GQ |
-| case | Corsair Air 740 |
-| CPU cooler | Corsair H115I Pro |
-| SSD | Samsung 960 Pro NVME (512 GB) |
-| HDD | 2x Seagate Barracuda 7200 (4 TB) |
+GPU - Zotac 1080 TI AMP Extreme 
+CPU - Intel i7 6850k
+RAM - Gskill F4 3200 16 GB
+motherboard - AsRock X99 Extreme4
+PSU - EVGA 1000 W GQ 
+case - Corsair Air 740 
+CPU cooler - Corsair H115I Pro
+SSD - Samsung 960 Pro NVME (512 GB)
+HDD - 2x Seagate Barracuda 7200 (4 TB)
 
 ### thought process
 My thought process evolved around what are the main factors to keep in mind when building such a computational beast.
