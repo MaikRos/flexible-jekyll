@@ -111,4 +111,4 @@ This whole setup is super silent (our air conditioning is louder than the comput
 If you have any questions, tweet @ me! 
 
 Happy coding! <br>
-![picture of the computer(../assets/img/DL_rig.jpg)
+![picture of the computer](../assets/img/DL_rig.jpg)
